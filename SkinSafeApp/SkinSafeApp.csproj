@@ -89,20 +89,20 @@
     <Reference Include="System.Core" />
     <Reference Include="monotouch" />
     <Reference Include="MonoTouch.Dialog-1" />
-    <Reference Include="CorePlotiOS">
-      <HintPath>..\Components\coreplot-1.4.0\lib\ios\CorePlotiOS.dll</HintPath>
+    <Reference Include="SQLite">
+      <HintPath>..\Components\sqlite-net-1.0.1\lib\ios\SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="BTProgressHUD">
+      <HintPath>..\Components\btprogresshud-1.8\lib\ios\BTProgressHUD.dll</HintPath>
     </Reference>
     <Reference Include="RestSharp.MonoTouch">
       <HintPath>..\Components\restsharp-104.1.0\lib\ios\RestSharp.MonoTouch.dll</HintPath>
     </Reference>
-    <Reference Include="SQLite">
-      <HintPath>..\Components\sqlite-net-1.0.1\lib\ios\SQLite.dll</HintPath>
-    </Reference>
     <Reference Include="Xamarin.Mobile">
       <HintPath>..\Components\xamarin.mobile-0.7.1\lib\ios\Xamarin.Mobile.dll</HintPath>
     </Reference>
-    <Reference Include="BTProgressHUD">
-      <HintPath>..\Components\btprogresshud-1.8\lib\ios\BTProgressHUD.dll</HintPath>
+    <Reference Include="CorePlotiOS">
+      <HintPath>..\Components\coreplot-1.4.0\lib\ios\CorePlotiOS.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -138,17 +138,12 @@
     <Compile Include="ViewControllers\EnvironmentViewController.designer.cs">
       <DependentUpon>EnvironmentViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="TableViewCells\ArticleTableViewCell.cs" />
-    <Compile Include="TableViewCells\ArticleTableViewCell.designer.cs">
-      <DependentUpon>ArticleTableViewCell.cs</DependentUpon>
-    </Compile>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="ViewControllers\" />
     <Folder Include="Data\" />
     <Folder Include="Images\" />
-    <Folder Include="TableViewCells\" />
   </ItemGroup>
   <ItemGroup>
     <XamarinComponentReference Include="sqlite-net">
@@ -168,12 +163,12 @@
       <Visible>False</Visible>
     </XamarinComponentReference>
     <XamarinComponentReference Include="coreplot">
+      <InstallationInProgress>True</InstallationInProgress>
       <Version>1.4.0</Version>
       <Visible>False</Visible>
     </XamarinComponentReference>
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="ViewControllers\EnvironmentViewController.xib" />
-    <InterfaceDefinition Include="TableViewCells\ArticleTableViewCell.xib" />
   </ItemGroup>
 </Project>
