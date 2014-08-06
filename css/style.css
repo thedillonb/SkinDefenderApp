@@ -51,6 +51,10 @@ ul {
   list-style: disc;
 }
 
+p {
+	margin-bottom: .8em;
+}
+
 blockquote, blockquote p { 
 	font-size: 35px;
 	color: #fff;
@@ -118,10 +122,11 @@ section {
 /* 3. Header */
 
 #header {
-	height:709px;
 	position:relative;
 	background-color:#2c3237;
 	text-align:center;
+	padding-bottom: 5em;
+	padding-top: 2em;
 	border-bottom: 8px solid #ddd
 }
 
@@ -471,7 +476,7 @@ iframe {
 /* 8. Content boxes */
 
 #content-boxes {
-	padding:50px 0 60px 0;
+	padding:60px 0 60px 0;
 	text-align:center
 }
 
@@ -543,12 +548,12 @@ iframe {
 #gallery {
 	min-height:400px;
 	position:relative;
-	padding:50px 0;
+	padding:75px 0;
 	background:#2c3237
 }
 
 .thumbnails > li {
-	margin-bottom: 25px!important
+	margin-bottom: 4px!important
 }
 
 #gallery h3 {
@@ -580,52 +585,33 @@ iframe {
 	padding:80px 0 100px 0
 }
 
-.cutoff-container {
-	height: 380px;
-	overflow: hidden;
-	position: absolute;
-	bottom: -100px;
-	right: 0
-}
-
 .container {
 	position:relative
 }
 
-#newsletterform {
+#newsletterform { 
+	margin: 20px 0;
 	float: right;
-	margin-top: -87px
-}
-
-#newsletterform div {
-	height: 45px;
-	float: left;
-	margin: 5px 18px 0 0
 }
 
 #newsletterform input {
-	padding: 20px 20px}
-
-#newsletterform label {
-	color:#fff;
-	text-shadow: 1px 1px rgba(0,0,0,.25);
-	font-size:12px
+	padding: 10px 15px;
+	margin-right: .5em;
+	width: 200px;
+	color: black;
 }
 
-a#button-newsletter {
+#button-newsletter {
 	color:#fff;
 	padding:11px 32px 10px 32px;
 	background:#111;
-	display:block;
-	float:left;
 	-webkit-border-radius: 4px;
 	-moz-border-radius: 4px;
 	border-radius: 4px;
-	margin-top: 30px;
 	font-size:14px
 }
 
-a:hover#button-newsletter {
+#button-newsletter {
 	text-decoration:none;
 	background:#222
 }
@@ -735,4 +721,8 @@ footer a {
 
 .texture {background: url(../images/stripes.png) repeat;height: 100%;width: 100%;position: absolute;top:0;left:0}
 
-#header {background-image:url(../images/urban.jpg)!important}
+#header {
+	background-image:url(../images/urban.jpg)!important;
+	background-size: 100% 100%	;
+    background-repeat: no-repeat;
+}
